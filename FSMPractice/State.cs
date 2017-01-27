@@ -9,12 +9,26 @@ namespace FSMPractice
     class State
     {
 
-        public State () {}
-        
+       //CallBack onEnter;
+        public delegate void OnEnter();
+        public OnEnter onEnter;
+
+        //CallBack onExit;
+        public delegate void OnExit();
+        public OnExit onExit;
+
+        public State() { }
+
+        public State (Enum e)
+        {
+
+        }
        
+        public void AddEnterFunction(Delegate d)
+        {
+            
+        }
 
-
-        
         
 
     }

@@ -25,52 +25,36 @@ namespace FSMPractice
 
     delegate void CallBack();
 
-
+    enum Weather
+    {
+        INIT = 0,
+        NOWIND = 1,
+        LIGHTWIND = 2,
+        EXTREMEWIND = 3,
+        END = 1000, 
+    }
     class Program
     {
 
-        int NumA = 25;
-        int NumB = 256;
-        int NumC = 8;
-        int sum;
-        string WordA = "Hello!";
+       
 
 
         static void Main(string[] args)
         {
-            FSM test = new FSM();
-
+         
 
         }
 
 
         static public void ActionA()
         {
-            Console.Write("I have ants in my eyes.");
-        }
 
-
-        static public void ActionB()
-        {
-            
-        }
-
-
-        static public void ActionC()
-        {
 
         }
 
 
-        static public void ActionD()
-        {
 
-        }
 
-        static public void ActionE()
-        {
-
-        }
 
     }
 }

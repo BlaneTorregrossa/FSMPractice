@@ -12,6 +12,7 @@ namespace FSMPractice
 
         CallBack onTest;
         CallBack onAltTest;
+        
 
         public FSM()
         {
@@ -26,41 +27,58 @@ namespace FSMPractice
             onAltTest += A;
         }
 
-        public void Test()
-        {
-            
-
-        }
-
-
-        public void AltTest()
-        {
-
-
-        }
-
-
-        //Dictionary<String, State> states;
-        //State aState; /*State bState; State cState; State dState; State eState;*/
-
-
-        //public void StateChange(State s)
+        //public void Test()
         //{
-        //    aState.exitState();
-        //    // aState.Equals();
-        //    aState = s;
-        //    //s.enterState();
-        //    aState.enterState();
+        //    if (onTest != null)
+        //        onTest.Invoke();
 
         //}
 
 
-        //public void StateTransistions()
+        //public void AltTest()
         //{
+        //    if (onAltTest != null)
+        //        onAltTest.Invoke();
 
         //}
 
         
+
+
+
+
+        Dictionary<string, State> states;
+        State cState;
+        public void StateChange(State s)
+        {
+           
+
+        }
+
+        public void StateDictionary()
+        {
+            states = new Dictionary<string, State>();
+
+
+        }
+
+
+        
+
+        //public void StateChange(State s)
+        //{
+           
+
+        //}
+
+        
+        //public void StateTransistions()
+        //{
+
+
+        //}
+
+
 
         //public bool Start()
         //{
